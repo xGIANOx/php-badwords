@@ -14,8 +14,8 @@
             <div class="col">
                 <form action="myscript.php" method="get">
                     <div class="my-5">
-                        <label for="badword">Badword</label>
-                        <input type="text" name="badword" id="badword" class="form-control" placeholder="Insert Badword" aria-descridedby="suffixid">
+                        <label for="badword" class="mb-3">Your Paragraph</label>
+                        <input type="text" name="badword" id="badword" class="form-control" placeholder="Insert text here" aria-descridedby="suffixid">
                     </div>
                     <button type="submit" class="btn btn-success">Submit</button>
                     <button type="reset" class="btn btn-warning">Reset</button>
