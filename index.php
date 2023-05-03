@@ -14,14 +14,9 @@
             <div class="col">
                 <form action="myscript.php" method="get">
                     <div class="my-5">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Insert Name" aria-descridedby="suffixid">
-                    </div>
-                    <div class="my-5">
                         <label for="badword">Badword</label>
                         <input type="text" name="badword" id="badword" class="form-control" placeholder="Insert Badword" aria-descridedby="suffixid">
                     </div>
-
                     <button type="submit" class="btn btn-success">Submit</button>
                     <button type="reset" class="btn btn-warning">Reset</button>
                 </form>
