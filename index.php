@@ -14,8 +14,12 @@
             <div class="col">
                 <form action="myscript.php" method="get">
                     <div class="my-5">
-                        <label for="badword" class="mb-3">Your Paragraph</label>
-                        <input type="text" name="badword" id="badword" class="form-control" placeholder="Insert text here" aria-descridedby="suffixid">
+                        <label for="paragraph" class="mb-3">Your Paragraph</label>
+                        <input type="text" name="paragraph" id="paragraph" class="form-control" placeholder="Insert text here" aria-descridedby="suffixid">
+                    </div>
+                    <div class="my-5">
+                        <label for="censored" class="mb-3">Word to censore</label>
+                        <input type="text" name="censored" id="censored" class="form-control" placeholder="Insert word to censore" aria-descridedby="suffixid">
                     </div>
                     <button type="submit" class="btn btn-success">Submit</button>
                     <button type="reset" class="btn btn-warning">Reset</button>

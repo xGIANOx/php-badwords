@@ -1,3 +1,10 @@
+<?php
+    // $censoredWord = _GET[]
+    $text = $_GET["paragraph"];
+    $wordToCensore = $_GET["censored"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +23,10 @@
         <h4 class="mt-5">Your Paragraph :</h4>
         <div class="d-flex mt-4">
             <p> 
-                <?php echo $_GET['badword']; ?>
+                <?php echo $_GET['paragraph']; ?>
             </p>
             <span class="lenght ms-5 fw-bold">
-                Lenght : <?php echo strlen($_GET['badword']); ?> 
+                Lenght : <?php echo strlen($_GET['paragraph']); ?> 
             </span>
         </div>
 
@@ -28,18 +35,11 @@
         <div class="d-flex mt-4">
             <p> 
                 <?php 
-                    $badWords = array("fuck", "shit", "bitch", "asshole");
-
-                    foreach ($badWords as $word) {
-                      $_GET['badword'] = str_ireplace($word, "***", $_GET['badword']);
-                    }
-                    echo '&nbsp';
-                    
-                    echo $_GET['badword'];
+                    echo str_ireplace($wordToCensore,"***",$text);
                 ?>
             </p>
             <span class="lenght ms-5 fw-bold">
-                Lenght : <?php echo strlen($_GET['badword']); ?> 
+                Lenght : <?php echo strlen(str_ireplace($wordToCensore,"***",$text)); ?> 
             </span>
         </div>
     </div>
